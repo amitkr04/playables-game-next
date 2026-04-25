@@ -1,6 +1,6 @@
 let ytGame = null;
 let isPaused = false;
-let isMuted = false;
+let audioEnabled = true;
 
 const MAX_SAVE_BYTES = 3 * 1024 * 1024;
 
@@ -21,9 +21,10 @@ const serializeSaveData = (data) => {
   }
 };
 
-const isSaveDataValid = (str) => typeof str === "string" && str.length <= MAX_SAVE_BYTES;
+const isSaveDataValid = (str) =>
+  typeof str === "string" && str.length <= MAX_SAVE_BYTES;
 
-export const initYouTubeSDK = async () => {
+export const initYouTubeSDK = async (callbacks = {}) => {
   if (typeof window === "undefined") return null;
 
   const yt = await waitForYtGame();
@@ -34,7 +35,11 @@ export const initYouTubeSDK = async () => {
 
   ytGame = yt;
   isPaused = false;
-  isMuted = false;
+
+  if (ytGame.system?.isAudioEnabled) {
+    audioEnabled = ytGame.system.isAudioEnabled();
+    callbacks.onAudioEnabledChanged?.(audioEnabled);
+  }
 
   let loadedData = null;
   if (ytGame.game?.loadData) {
@@ -50,9 +55,8 @@ export const initYouTubeSDK = async () => {
 
   try {
     ytGame.game.firstFrameReady();
-    ytGame.game.gameReady();
   } catch (error) {
-    console.warn("ytgame.game API not available yet", error);
+    console.warn("ytgame.game.firstFrameReady failed", error);
   }
 
   if (ytGame.system?.onPause) {
@@ -69,11 +73,21 @@ export const initYouTubeSDK = async () => {
 
   if (ytGame.system?.onAudioEnabledChange) {
     ytGame.system.onAudioEnabledChange((enabled) => {
-      isMuted = !enabled;
+      audioEnabled = enabled;
+      callbacks.onAudioEnabledChanged?.(enabled);
     });
   }
 
   return loadedData;
+};
+
+export const notifyGameReady = () => {
+  if (!ytGame?.game?.gameReady) return;
+  try {
+    ytGame.game.gameReady();
+  } catch (error) {
+    console.warn("ytgame.game.gameReady failed", error);
+  }
 };
 
 export const saveGameData = async (data) => {
@@ -92,7 +106,7 @@ export const saveGameData = async (data) => {
 };
 
 export const isGamePaused = () => isPaused;
-export const isGameMuted = () => isMuted;
+export const isAudioEnabled = () => audioEnabled;
 
 export const sendScore = async (score) => {
   if (!ytGame?.engagement?.sendScore) return;
@@ -105,4 +119,3 @@ export const sendScore = async (score) => {
     // Ignore send failures in local or test environments.
   }
 };
-
