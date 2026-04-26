@@ -1,5 +1,5 @@
-import GameCanvas from "./game/GameCanvas";
+import Gamewrapper from "./spin-match/Gamewrapper";
 
 export default function Home() {
-  return <GameCanvas />;
+  return <Gamewrapper />;
 }

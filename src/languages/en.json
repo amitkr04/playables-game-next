@@ -1,0 +1,133 @@
+{
+  "spin_match": {
+    "MetaData": {
+      "title": "Spin Match – Precision Timing & Reflex Arcade Game | Cloudz.fun",
+      "description": "Play Spin Match, a fast-paced reflex arcade game where timing and color matching decide your survival. Tap at the right moment to pass through matching colors in spinning rings. Play free online at Cloudz.fun.",
+      "keywords": "spin match, play spin match online, reflex arcade game, color matching game, timing games online, fast reaction games, arcade skill games, Cloudz.fun, tap timing game",
+      "ogTitle": "Spin Match – Test Your Reflex & Timing Skills | Cloudz.fun",
+      "ogDescription": "How sharp are your reflexes? In Spin Match, match colors and time your jumps perfectly through spinning rings. One mistake ends the run. Play free now!",
+      "twitterTitle": "Spin Match – Fast Reflex Color Timing Game | Cloudz.fun",
+      "twitterDescription": "Tap at the perfect moment! Match colors and survive spinning rings in this addictive reflex arcade game. Play Spin Match free on Cloudz.fun!"
+    },
+    "spin_match_content": {
+      "title_t": "SPIN MATCH",
+      "heading_t": "Spin Match | Precision Timing & Reflex Arcade",
+      "head_dec": "A fast and fun arcade game where timing and color matching test your reflexes.",
+      "head_con": "Spin Match is a high-speed reflex arcade game where you guide a ball through spinning rings by matching colors. One wrong move ends the game instantly, making timing and focus the key to survival.",
+
+      "obj_sub": "Game Objective",
+      "obj_dec": " Keep moving up through the spinning ring. Tap at the right time so your ball passes through the same color. A wrong match ends the game.",
+
+      "setup_sub": "How to Play",
+      "setup_dec": "Spin Match is simple to learn but hard to master. Your reaction speed and timing decide how far you can go.",
+
+      "setup_list_one_b": "Controls",
+      "setup_list_one": "Tap, click, or press Space to jump.",
+
+      "setup_list_two_b": "Color Matching",
+      "setup_list_two": "Pass through the same color as your ball.",
+
+      "setup_list_three_b": "Color Change",
+      "setup_list_three": "Orbs change your ball color, so react quickly.",
+
+      "setup_list_four_b": "Endless Challenge",
+      "setup_list_four": "The game never stops and keeps getting faster.",
+
+      "feat_sub": "Game Features",
+
+      "feat_list_one_b": "Watch Movement",
+      "feat_list_one": "See how the ring moves before jumping.",
+
+      "feat_list_two_b": "React Fast",
+      "feat_list_two": "Quickly adjust when your color changes.",
+
+      "feat_list_three_b": "Good Timing",
+      "feat_list_three": "Jump at the right moment to pass safely.",
+
+      "rule_sub": "Gets Harder Over Time",
+
+      "rule_list_one_b": "Speed Up",
+      "rule_list_one": "Game gets faster as score increases.",
+
+      "rule_list_two_b": "Direction Change",
+      "rule_list_two": "Spin direction flips every 10 points.",
+      "rule_list_three_b": "One Life",
+      "rule_list_three": "Wrong color ends the game.",
+      "rule_list_four_b": "Same Gravity",
+      "rule_list_four": "Jump timing stays important.",
+      "rule_list_five_b": "Higher Score",
+      "rule_list_five": "More speed means more challenge.",
+      "rule_list_six_b": "Smooth Play",
+      "rule_list_six": "No lag, fast response gameplay.",
+
+      "foot_sub": "Ready to Play?",
+      "foot_dec_b": "Difficulty:",
+      "foot_dec": "Gets harder the longer you play.",
+      "foot_btn": "Start New Game"
+    },
+
+    "Spin-match-loading": {
+      "CLOUDZFUN": "CLOUDZ FUN",
+      "SPINMATCH": "SPIN MATCH",
+      "Getready": "Get ready to play!"
+    },
+
+    "faq_section": {
+      "q_one": "How does the speed scaling work in Spin Match?",
+      "ans_one": "The rotation speed increases with every point you score. However, at every 5-point milestone, you will notice a significant surge in velocity, requiring much faster reaction times.",
+      "q_two": "When do the ring change rotation direction?",
+      "ans_two": "Every 10 points (10, 20, 30, etc.), the ring instantly reverse their rotation direction. This is designed to test your spatial adaptation and break repetitive timing patterns.",
+      "q_three": "How do I control the ball accurately?",
+      "ans_three": "On desktop, use the Space bar or Left Mouse Click. On mobile, simply tap the screen. Each interaction provides a consistent upward burst; timing these bursts allows you to 'hover' or move upward.",
+      "q_four": "Can I pass through any color segment of an obstacle?",
+      "ans_four": "No. You can only safely pass through segments that exactly match the current color of your ball. Touching any other color results in an immediate game over.",
+      "q_five": "What is the purpose of the multi-colored Match orbs?",
+      "ans_five": "Passing through an orb triggers a Spectrum Shift, which randomizes your ball's color. You must instantly identify your new color to navigate the next obstacle correctly.",
+      "q_six": "Is there a specific strategy for high scores?",
+      "ans_six": "The most effective strategy is the 'Observation Hover.' Instead of rushing upward, tap steadily to stay in place below an obstacle until you have analyzed its speed and direction.",
+      "q_seven": "Are there different levels to complete?",
+      "ans_seven": "Spin Match features a 'Classic Endless' mode. There are no level caps; the difficulty floor rises continuously, making the game progressively harder the longer you survive.",
+      "q_eight": "Does the gravity change as the game progresses?",
+      "ans_eight": "The gravity constant remains the same throughout the run. This allows players to build muscle memory for the jump height while only the obstacle speed and direction change.",
+      "fa_text": "Frequently Asked ",
+      "ques_text": "Questions",
+      "faq_dec": "Everything you need to know about the game."
+    },
+    "dir_flip": "↺ DIRECTION FLIP!",
+    "spd_up": "⚡ SPEED UP!",
+    "best_score": "BEST SCORE",
+    "sound_on": "Sound ON",
+    "sound_off": "Sound OFF",
+    "restart": "Restart",
+    "green": "GREEN",
+    "red": "RED",
+    "yellow": "YELLOW",
+    "blue": "BLUE",
+    "hint_text": " TAP / CLICK / SPACE TO JUMP ",
+    "game_end": "GAME OVER",
+    "total_s": "TOTAL SCORE",
+    "best_record": "🏆 NEW BEST RECORD!",
+    "play_again": "PLAY AGAIN",
+    "mid_air": "JUMP ANYTIME (MID-AIR)",
+    "mtch_clr": "MATCH COLOR",
+    "strk_saved": "STREAK SAVED",
+    "tut": "Tutorial",
+    "slct_theme": "Select Theme",
+    "close_t": "CLOSE",
+    "themes": {
+      "sun": "Sun",
+      "moon": "Moon",
+      "ocean": "Ocean"
+    },
+    "step_one_t": "STEP 1",
+    "step_one_msg": "Click/Tap on the ball to jump",
+    "step_one_ins": "👆 CLICK ON THE BALL 👆",
+    "step_two_t": "STEP 2",
+    "step_two_msg": "Match your GREEN ball with the GREEN segment",
+    "step_two_ins": "🎯 JUMP THROUGH THE GREEN SEGMENT 🎯",
+    "step_three_t": "READY TO PLAY!",
+    "step_three_msg": "Good luck! Beat your high score",
+    "step_three_ins": "👉 TAP ANYWHERE TO START 👈",
+    "wrong_match": "❌ WRONG COLOR! TRY AGAIN ❌"
+  }
+}

@@ -1,5 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
+import IntlProvider from "./spin-match/IntlProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,9 +14,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <script src="https://www.youtube.com/game_api/v1"></script>
+        <Script src="https://www.youtube.com/game_api/v1" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <IntlProvider>{children}</IntlProvider>
+      </body>
     </html>
   );
 }
