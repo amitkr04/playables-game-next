@@ -1,14 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
+  trailingSlash: true,
   images: {
     unoptimized: true,
   },
   webpack(config, { isServer }) {
-    if (!isServer && config.output) {
-      config.output.filename = "static/chunks/[id].js";
-      config.output.chunkFilename = "static/chunks/[id].js";
-      config.output.assetModuleFilename = "static/media/[name][ext]";
+    if (!isServer) {
+      config.output.publicPath = "./_next/";
     }
     return config;
   },
